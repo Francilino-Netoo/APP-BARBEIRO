@@ -74,13 +74,13 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.barbeiro"
+    namespace "com.barbeiroapp"
     defaultConfig {
-        applicationId "com.barbeiro"
+        applicationId "com.barbeiroapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "150"
     }
     signingConfigs {
         release {
