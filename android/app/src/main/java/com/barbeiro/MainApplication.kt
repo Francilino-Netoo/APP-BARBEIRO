@@ -1,4 +1,4 @@
-package com.barbeiro
+package com.barbeiroapp
 
 import android.app.Application
 import com.facebook.react.PackageList

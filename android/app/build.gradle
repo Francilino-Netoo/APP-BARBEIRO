@@ -79,8 +79,8 @@ android {
         applicationId "com.barbeiroapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "150"
+        versionCode 128
+        versionName "128"
     }
     signingConfigs {
         release {
