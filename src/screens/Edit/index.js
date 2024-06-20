@@ -38,7 +38,6 @@ export default () => {
   const handleSignClick = async () => {
     const updatedData = {};
 
-    // Obter os valores atuais do AsyncStorage
     const currentName = await AsyncStorage.getItem('userName');
     const currentEmail = await AsyncStorage.getItem('userEmail');
 

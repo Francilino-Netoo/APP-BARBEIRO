@@ -1,18 +1,17 @@
-import React, { useState, useEffect } from "react";
-import Api from "../../Api";
-import { RefreshControl } from "react-native";
+import React, {useState, useEffect} from 'react';
+import Api from '../../Api';
+import {RefreshControl} from 'react-native';
 
-import BarberItem from "../../components/BarberItem";
+import BarberItem from '../../components/BarberItem';
 
 import {
   Container,
   HeaderArea,
   HeaderTitle,
   Scroller,
-  LoadingIcon,
   ListArea,
   EmptyWarning,
-} from "./styles";
+} from './styles';
 
 export default () => {
   const [loading, setLoading] = useState(false);
@@ -28,13 +27,13 @@ export default () => {
 
     try {
       const res = await Api.getFavorites();
-      if (res.error === "") {
+      if (res.error === '') {
         setList(res.list);
       } else {
-        alert("Erro:" + res.error);
+        alert('Erro:' + res.error);
       }
     } catch (error) {
-      alert("Ocorreu um erro ao buscar os favoritos");
+      alert('Ocorreu um erro ao buscar os favoritos');
     }
 
     setLoading(false);
@@ -49,8 +48,7 @@ export default () => {
       <Scroller
         refreshControl={
           <RefreshControl refreshing={loading} onRefresh={getFavorites} />
-        }
-      >
+        }>
         {!loading && list.length === 0 && (
           <EmptyWarning>Não há favoritos.</EmptyWarning>
         )}

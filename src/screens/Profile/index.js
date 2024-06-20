@@ -64,7 +64,7 @@ export default () => {
 
   const onRefresh = async () => {
     setRefreshing(true);
-    // Chame a função que carrega os dados novamente
+
     await getUserDataFromStorage();
     setRefreshing(false);
   };
